@@ -61,4 +61,35 @@ sudo apt-get install iverilog
  Below is the screenshot showing sucessful launch:
  
 ![image](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/fd1861a0-3995-4f15-b0aa-f58e18e02082)
+</details>
+ <details>
+ <summary> gtkwave </summary>
 
+  I installed gtkwave using the following command:
+  ```bash
+sudo apt-get install gtkwave
+ ```
+ Below is the screenshot showing sucessful launch:
+ ![image](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/21386995-18ef-4c1d-a188-b1d97fab11ce)
+![image](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/05fc8a66-be0e-42fc-8189-71243c46cdf7)
+
+</details>
+ <details>
+ <summary> magic </summary>
+
+
+I installed magic using the following commands:
+  ```bash
+sudo apt-get install m4
+sudo apt-get install tcsh
+sudo apt-get install csh
+sudo apt-get install libx11-dev
+sudo apt-get install tcl-dev tk-dev
+sudo apt-get install libcairo2-dev
+sudo apt-get install mesa-common-dev libglu1-mesa-dev
+sudo apt-get install libncurses-dev
+ ```
+ Below is the screenshot showing sucessful launch:
+ ![image](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/5e3c330f-8b2d-4f9f-a73c-6e781ca9d3b7)
+
+ 
