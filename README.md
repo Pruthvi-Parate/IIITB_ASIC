@@ -50,5 +50,15 @@ Below is the screenshot showing sucessful installation:
 ![image](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/a36e4559-abd5-4fba-8f97-2acbcd7f9d92)
 Below is the screenshot showing sucessful launch:
 ![image](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/999fc719-b6f8-4ce7-8028-4f66efe2ecf4)
-
+</details>
+ <details>
+ <summary> iverilog </summary>
+	 
+ I installed iverilog using the following command:
+  ```bash
+sudo apt-get install iverilog
+  ```
+ Below is the screenshot showing sucessful launch:
+ 
+![image](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/fd1861a0-3995-4f15-b0aa-f58e18e02082)
 
