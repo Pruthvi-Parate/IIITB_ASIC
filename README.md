@@ -91,5 +91,14 @@ sudo apt-get install libncurses-dev
  ```
  Below is the screenshot showing sucessful launch:
  ![image](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/5e3c330f-8b2d-4f9f-a73c-6e781ca9d3b7)
+</details>
 
+[Reference Section]:#
+## References
+1. https://yosyshq.net/yosys/
+2. https://steveicarus.github.io/iverilog/
+3. https://gtkwave.sourceforge.net/
+4. https://ngspice.sourceforge.io/
+5. https://github.com/The-OpenROAD-Project/OpenSTA
+6. http://opencircuitdesign.com/magic/
  
