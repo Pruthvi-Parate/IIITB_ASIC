@@ -93,6 +93,47 @@ sudo apt-get install libncurses-dev
  ![image](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/5e3c330f-8b2d-4f9f-a73c-6e781ca9d3b7)
 </details>
 
+## Day 1
+
+<details>
+ <summary> Verilog codes </summary>
+
+  Here in this section I used the 2*1 mux which is taken from https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git
+</details>
+<details>
+	<summary>Simulation</summary>
+	Below is the screenshot of code of goodmux and its testbench:
+	![goodmux](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/e9b62809-14dd-49c5-b0c5-651a085fac29)
+	Below is the gtkwave plot:
+	![gtkwave](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/f70f6566-637b-4882-a7a8-980f6f199f43)
+
+</details>
+<details>
+	<summary>Synthesis: Yosys</summary>
+	I used following commands to synthesize :
+	
+	
+	yosys> read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+	yosys> read_verilog good_mux.v
+	yosys> synth -top good_mux
+	yosys> abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+	yosys> show
+
+   Below is the screenshot of synthesized design:
+   
+   ![yosys](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/ec14dd89-6aa1-4e07-be66-b71de591e1da)
+I used the following commands to generate the netlist:
+ ```bash
+ yosys> write_verilog mymux_netlist.v
+ yosys> write_verilog -noattr mymux_netlist.v
+ ```
+Below is the screenshots for both: 
+
+![netlist](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/2439985b-e072-406d-a89a-ed03de4f9cb6)
+![noattr](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/6cd9948e-d76c-4327-bb75-3746fb97267d)
+
+</details>
+
 [Reference Section]:#
 ## References
 1. https://yosyshq.net/yosys/
