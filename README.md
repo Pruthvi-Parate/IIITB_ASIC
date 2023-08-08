@@ -66,9 +66,10 @@ sudo apt-get install iverilog
  <summary> gtkwave </summary>
 
   I installed gtkwave using the following command:
-  ```bash
+```bash
 sudo apt-get install gtkwave
- ```
+```
+
  Below is the screenshot showing sucessful launch:
  ![image](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/21386995-18ef-4c1d-a188-b1d97fab11ce)
 ![image](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/05fc8a66-be0e-42fc-8189-71243c46cdf7)
@@ -102,9 +103,13 @@ sudo apt-get install libncurses-dev
 </details>
 <details>
 	<summary>Simulation</summary>
+	
 	Below is the screenshot of code of goodmux and its testbench:
+ 
 	![goodmux](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/e9b62809-14dd-49c5-b0c5-651a085fac29)
+ 
 	Below is the gtkwave plot:
+ 
 	![gtkwave](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/f70f6566-637b-4882-a7a8-980f6f199f43)
 
 </details>
@@ -120,7 +125,6 @@ sudo apt-get install libncurses-dev
 	yosys> show
 
    Below is the screenshot of synthesized design:
-   
    ![yosys](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/ec14dd89-6aa1-4e07-be66-b71de591e1da)
 I used the following commands to generate the netlist:
  ```bash
