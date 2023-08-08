@@ -103,13 +103,12 @@ sudo apt-get install libncurses-dev
 </details>
 <details>
 	<summary>Simulation</summary>
-	Below is the screenshot of code of goodmux and its testbench:
-	![goodmux](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/552e8728-67a3-43a3-bb54-b22fa3ed12b8)
-
-	Below is the gtkwave plot:
-	![gtkwave](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/c87070f6-dcc1-46fb-9976-f673ae6033e9)
-
-
+	
+Below is the screenshot of code of goodmux and its testbench:
+![goodmux](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/552e8728-67a3-43a3-bb54-b22fa3ed12b8)
+	
+Below is the gtkwave plot:
+![gtkwave](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/c87070f6-dcc1-46fb-9976-f673ae6033e9)
 </details>
 <details>
 	<summary>Synthesis: Yosys</summary>
