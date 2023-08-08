@@ -103,14 +103,12 @@ sudo apt-get install libncurses-dev
 </details>
 <details>
 	<summary>Simulation</summary>
-	
 	Below is the screenshot of code of goodmux and its testbench:
- 
-	![goodmux](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/e9b62809-14dd-49c5-b0c5-651a085fac29)
- 
+	![goodmux](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/552e8728-67a3-43a3-bb54-b22fa3ed12b8)
+
 	Below is the gtkwave plot:
- 
-	![gtkwave](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/f70f6566-637b-4882-a7a8-980f6f199f43)
+	![gtkwave](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/c87070f6-dcc1-46fb-9976-f673ae6033e9)
+
 
 </details>
 <details>
