@@ -135,7 +135,7 @@ Below is the screenshots for both:
 
 </details>
 
-# Day 2
+## Day 2
 
 <details>
  <summary> Overview </summary>
@@ -179,9 +179,10 @@ Below is the screenshots for both:
 <details>
 	<summary>Sub_module1 level
 </summary>
-	Below is the schematic of submodule1.
-	
-	![submodule1](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/9e926cb5-4cc7-4cda-b0fe-4a0fcaa7ede3)
+Below is the schematic of submodule1.
+
+ ![submodule1](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/61c7bea7-1786-4b36-aa95-7e047f92adf2)
+
 </details>
 
 <details><summary>
@@ -241,6 +242,7 @@ Below is the representation of synthesized design of mult8.
 
 
 </details>
+
 [Reference Section]:#
 ## References
 1. https://yosyshq.net/yosys/
