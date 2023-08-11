@@ -135,6 +135,112 @@ Below is the screenshots for both:
 
 </details>
 
+# Day 2
+
+<details>
+ <summary> Overview </summary>
+
+  In this section, I embarked on a comprehensive synthesis process that encompassed various levels of design abstraction. Initially, I tackled the task of synthesizing a multiple module structure, composed of two distinct submodules. This synthesis endeavor took place both at the multiple module level, considering both hierarchical and flattened forms, as well as at the individual submodule level. The latter level of synthesis holds particular significance for two key reasons.
+  Here I took the verilog codes from : https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git
+</details>
+
+<details>
+	<summary>Synthesis of Multiple_modules</summary>
+	This segment of the study elucidates the synthesis process applied to multiple modules, emphasizing a departure from the single-module approach. The Yosys commands, previously outlined and discussed, form the cornerstone of this synthesis process, adapted and executed to accommodate two distinct design types.Below is 
+	the commands for synthesis
+	
+	yosys> read_liberty -lib <path to lib file>
+	yosys> read_verilog <path to verilog file>
+	yosys> synth -top <top_module_name>
+	yosys> abc -liberty <path to lib file>
+	yosys> flatten
+	yosys> show
+	yosys> write_verilog -noattr <file_name_netlist.v>
+
+  Below is the representation of hierarchy design.
+  
+  ![mulmod](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/367b38d8-99ff-46f2-8d6e-57f45b299b26)
+
+
+ Below is the netlist.
+ 
+ ![noattr](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/1f99673d-5d59-4680-973f-12411458e16e)
+
+ And below is the flat code and design.
+ 
+ ![flatcmd](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/329fa960-e360-41bc-810e-3526b92d8426)
+
+![flatcode](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/b2f62f6c-d550-4b9d-8c22-7a05db80124e)
+
+
+ ![flattenimg](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/8af15e87-9c85-4025-86ac-ba5248173f0f)
+
+</details>
+<details>
+	<summary>Sub_module1 level
+</summary>
+	Below is the schematic of submodule1.
+	
+	![submodule1](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/9e926cb5-4cc7-4cda-b0fe-4a0fcaa7ede3)
+</details>
+
+<details><summary>
+	Simulation of dff
+</summary>
+Below is the representation of dff with async reset.
+
+![asyncReset](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/35102baa-7ca3-4eb4-af0f-895af9a7f355)
+
+Below is the representation of dff with async set.
+
+![asyncSet](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/b0c37d01-647c-47b7-b943-666b52612f20)
+
+Below is the representation of dff with sync reset.
+
+![syncReset](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/a5059c10-54f0-40a3-92c6-6a398322405f)
+
+</details>
+
+<details><summary>
+	Synthesis of dff
+</summary>
+Below is the representation of dff with async reset.
+
+![SasyncReset](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/f19796c8-7ed9-4921-a9f6-233f07f0e436)
+
+
+
+Below is the representation of dff with async set.
+
+![SasyncSet](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/aacdea48-5b17-4fad-b908-e61c28cdfb2d)
+
+
+Below is the representation of dff with sync reset.
+
+![SsyncReset](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/6e0d8c82-09ad-4391-b142-aaa4bf1d55a8)
+
+
+</details>
+
+<details><summary>
+	Synthesis of mult_2.v and mult_8.v
+</summary>
+
+Below is the representation of synthesized design of mult2.
+
+![mul2file](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/cca0aef9-f183-449c-a4a8-d99f962558f8)
+
+![mul2](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/cee43580-913f-4dd5-be7f-57a70c1da116)
+
+
+Below is the representation of synthesized design of mult8.
+
+![mult8file](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/f3aac94f-0eba-4648-b586-d74c989249c9)
+
+![mult8](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/6dd542e3-ed60-442f-9a50-bd557e2d4c52)
+
+
+</details>
 [Reference Section]:#
 ## References
 1. https://yosyshq.net/yosys/
