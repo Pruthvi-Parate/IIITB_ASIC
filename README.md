@@ -253,4 +253,5 @@ Below is the representation of synthesized design of mult8.
 4. https://ngspice.sourceforge.io/
 5. https://github.com/The-OpenROAD-Project/OpenSTA
 6. http://opencircuitdesign.com/magic/
+7. https://github.com/kunalg123/sky130RTLDesignAndSynthesisWorkshop.git
  
