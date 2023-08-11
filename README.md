@@ -122,7 +122,9 @@ Below is the gtkwave plot:
 	yosys> show
 
    Below is the screenshot of synthesized design:
+   
    ![yosys](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/ec14dd89-6aa1-4e07-be66-b71de591e1da)
+   
 I used the following commands to generate the netlist:
  ```bash
  yosys> write_verilog mymux_netlist.v
