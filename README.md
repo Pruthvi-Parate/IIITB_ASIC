@@ -605,6 +605,35 @@ Below is the resulted simulation which completely matches with previous one
 
 </details>
 
+<details><summary>demux_case</summary>
+
+Below is the representation of demux_case and by observing it is 1*8 demux
+
+
+
+</details>
+
+<details><summary>demux_generate</summary>
+
+Below is the representation of demux_generate and by observing it is 1*8 demux
+
+
+Below is the synthesized design representation
+
+For GLS below are the commands
+
+```
+iverilog  ../mylib/verilog_model/primitives.v ../mylib/verilog_model/sky130_fd_sc_hd.v demux_generate_net.v tb_demux_generate.v
+./a.out
+gtkwave tb_demux_generate.vcd
+```
+
+Below is shown the simulation which is perfectly matches with the previous one
+
+
+</details>
+
+<details><summary>RCA</summary></details>
 [Reference Section]:#
 ## References
 1. https://yosyshq.net/yosys/
