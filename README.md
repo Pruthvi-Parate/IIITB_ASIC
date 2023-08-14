@@ -582,12 +582,28 @@ Displayed here is a representation of the design achieved, and within it, a clea
  ```
 iverilog  ../mylib/verilog_model/primitives.v ../mylib/verilog_model/sky130_fd_sc_hd.v bad_case_net.v tb_bad_case.v
 ./a.out
-gtkwave tb_bad_case.vdc
+gtkwave tb_bad_case.vcd
 ```
 
 Below is the simulation in which we can see the mismatch
 </details>
 
+<details><summary>Simulation, synthesis, and GLS of  mux_generate</summary>
+
+Below is the representation simulation of mux_generate which is 4*1 mux
+
+
+To obtain GLS below are the commands 
+
+```
+iverilog  ../mylib/verilog_model/primitives.v ../mylib/verilog_model/sky130_fd_sc_hd.v mux_generate_net.v tb_mux_generate.v
+./a.out
+gtkwave tb_mux_generate.vcd
+```
+
+Below is the resulted simulation which completely matches with previous one
+
+</details>
 
 [Reference Section]:#
 ## References
