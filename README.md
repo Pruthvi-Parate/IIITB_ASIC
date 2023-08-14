@@ -525,6 +525,56 @@ Below representation shows an evident dissimilarity arises when comparing this s
 
 </details>
 
+## Day 5
+
+<details> <summarry> Overview
+</summarry>
+	
+In the realm of ASIC VLSI system design, efficient decision-making and control flow mechanisms are paramount to achieving optimal performance and functionality. This is where conditional constructs such as "if" and "case" statements play a pivotal role. These statements serve as powerful tools for directing the behavior of digital circuits, allowing designers to create dynamic responses based on specific conditions or input values. In this context, the intricate interplay between these conditional statements and the underlying hardware architecture forms the cornerstone of crafting sophisticated and responsive ASIC designs
+
+</details>
+
+<details><summary>Simulation and synthesis of incomp_if</summary>
+
+Presented below is a representation of simulation and synthesis showcasing the outcome of the simulation process. Upon analysis, it becomes evident that an inferred latch has materialized within the design. This inference is drawn from the observation that the output consistently retains a constant value during instances when the "select" signal fails to achieve a high state.
+
+</details>
+
+<details><summary>
+	Simulation and synthesis of incomp_if2
+</summary>
+	
+Below is shown simulation and synthesized representation of incomp_if2
+
+
+ 
+</details>
+
+<details><summary> Simulation and synthesis of incomp_case</summary>
+In essence, a "case" statement involves evaluating a given expression against a set of predefined conditions, known as case values. Once a match is found between the expression and a case value, the associated block of logic is executed. This allows for the implementation of various pathways based on different input scenarios.
+following are the commands
+
+```
+iverilog comp_case.v tb_comp_case.v
+./a.out
+gtkwave tb_comp_case.vcd
+```
+
+Below is shown representation of simulation and synthesis. This behavior specifically manifests when the "select" signal is assigned a value of either 2 or 3, with particular emphasis on the condition where the second bit of the "select" signal, denoted as sel[1], asserts a logic level of 1.
+
+
+ 
+</details>
+
+<details><summary>Synthesis of partial_case_assign</summary>
+
+Displayed here is a representation of the design achieved, and within it, a clear outcome aligns with our expectations. As anticipated, a single latch materializes, governing the behavior of the x output. Moreover, the boolean expressions we foresaw for both x and y are convincingly deduced by the design itself. This means that the logic we intended for x and y, the way they should operate based on specific conditions, is accurately recognized and implemented by the design.
+
+
+
+</details>
+
+
 [Reference Section]:#
 ## References
 1. https://yosyshq.net/yosys/
