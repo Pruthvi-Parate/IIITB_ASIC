@@ -245,6 +245,109 @@ Below is the representation of synthesized design of mult8.
 
 </details>
 
+  ## Day 3
+<details><summary>
+	Overview
+</summary> 
+Within the expansive realm of ASIC design, the principles of optimization serve as the cornerstone for achieving enhanced performance, efficiency, and functionality. By employing techniques such as Boolean logic optimization, logic synthesis, and technology mapping, we can ensure that the combinational logic in your ASIC design is fine-tuned for optimal speed and efficiency.
+</details>
+<details> <summary>Combinational logic optimization</summary> 
+Combinational optimization stands as a cornerstone in the process of ASIC design, focusing on logic circuits that produce output solely based on their current input values. At this stage, optimization is aimed at refining the logic gates and their interconnections to achieve minimal propagation delays, reduced power consumption, and compact layouts. Below are the commands
+	
+	yosys> read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+	yosys> read_verilog opt_check.v
+	yosys> synth -top opt_check
+	yosys> opt_clean -purge
+	yosys> abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+	yosys> show
+
+Below is the representation of the optimized design.
+
+![optcheck](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/ebaf879b-9d1b-41ea-9426-87c5c6c60caf)
+
+
+Below it the representation to view synthesized design of optimized optcheck_2.v (y=a?1:b)
+
+![optcheck2](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/2065d93b-04bf-423b-b73f-923bbe15eee4)
+
+
+Below it the representation to view synthesized design of optimized optcheck_3.v (y=a?(c?b:0):0)
+
+![optcheck3](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/70244762-58d2-4a12-9a3f-a627ac457488)
+
+
+Below it the representation to view synthesized design of optimized optcheck_4.v (y = a?(b?(a & c ):c):(!c))
+
+![optcheck4](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/a7318da5-06db-4160-bc2a-71979991b89c)
+
+
+Below it the representation to view synthesized design of optimized multiple_module_opt.v 
+
+![multimodopt2](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/ed4ab85e-722f-4799-9007-4553267a4210)
+
+
+</details>
+<details><summary>
+	Sequential logic optimizations
+</summary>
+Sequential optimization, on the other hand, delves into the complexities introduced by memory elements and feedback loops within a circuit. These components give rise to sequential logic, where the output depends not just on the current inputs but also on the previous states. Achieving optimal performance in sequential logic requires a holistic approach, incorporating factors like clock frequency, setup and hold times, and routing congestion. 
+
+ Below is the command  to simulate the design of dff_const1.v
+ 
+```
+iverilog dff_const1.v tb_dff_const1.v
+./a.out
+gtkwave tb_dff_const1.vdc
+ ```
+<details><summary>dff_const1</summary>
+Below is the representation of the obtained simulation
+
+Below is the representation of syntesized design of optimized dff_const1.v
+
+</details>
+
+<details><summary>dff_const2</summary>
+Below is the representation of the obtained simulation
+
+Below is the representation of syntesized design of optimized dff_const2.v
+
+</details>
+
+<details><summary>dff_const3</summary>
+Below is the representation of the obtained simulation
+
+Below is the representation of syntesized design of optimized dff_const3.v
+
+</details>
+
+<details><summary>dff_const4</summary>
+Below is the representation of the obtained simulation
+
+Below is the representation of syntesized design of optimized dff_const4.v
+
+</details>
+
+<details><summary>dff_const5</summary>
+Below is the representation of the obtained simulation
+
+Below is the representation of syntesized design of optimized dff_const5.v
+
+</details>
+
+<details><summary>counter_opt</summary>
+
+
+Below is the representation of optimized design
+
+</details>
+
+<details><summary>counter_opt2</summary>
+
+Below is the representation of syntesized design
+
+</details>
+
+</details>
 [Reference Section]:#
 ## References
 1. https://yosyshq.net/yosys/
