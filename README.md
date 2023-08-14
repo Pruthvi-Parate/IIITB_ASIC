@@ -407,9 +407,13 @@ Below are the commands
 ```
 iverilog <name verilog: ternary_operator_mux.v tb_ternary_operator_mux.v
 ./a.out
-gtkwave tb_ternary_operator_mux.vdc
+gtkwave tb_ternary_operator_mux.vcd
 ```
 Below is the obtained simulation which acts as mux
+
+![simtern](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/830066ba-fa93-410c-9fb6-1cffe3ecc9c6)
+
+![synthtern](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/4751c1c3-6de4-49be-a663-d7598179bbf3)
 
 
 Below is the command and representation to synthesis the design into netlist of mux.
@@ -422,6 +426,102 @@ Below is the command and representation to synthesis the design into netlist of 
 	yosys> show
 
 Below is the obtained net file
+
+![ternnetlist](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/bf46f287-2de8-4fe2-b5c7-c0c0cb2d86b8)
+
+
+Below is the commands GLS of mux
+
+```
+iverilog <path to verilog model: ../mylib/verilog_model/primitives.v> <path to sky130_fd_sc_hd__tt_025C_1v80.lib: ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib> <name netlist: ternary_operator_mux_net.v> <name testbench: tb_ternary_operator_mux.v>
+./a.out
+gtkwave tb_ternary_operator_mux.vcd
+```
+
+Below is the simulation which matches with pre-synthesis simulation
+
+![postsimtern](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/b49838e9-8c41-4a13-89b0-820dadb78fd3)
+
+
+</details>
+
+<details><summary> Simulation and synthesis:bad_mux</summary>
+
+ Below are the commands to simulate bad_mux
+
+  In the provided screenshot below of the simulation results, it is apparent that a concerning behavior has been observed. Specifically, the discrepancy arises when the inputs undergo alterations. In this context, it is evident that the variable "y" fails to undergo evaluation. This outcome contradicts the expected behavior and signifies an anomaly in the simulation process. 
+
+![simmux](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/5a4f9f9f-4e4e-495d-a5e7-1785b912d4ab)
+
+
+Below is the command to synthesize the design into netlist
+
+	yosys> read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+	yosys> read_verilog  bad_mux.v
+	yosys> synth -top bad_mux
+	yosys> abc -liberty sky130_fd_sc_hd__tt_025C_1v80.lib
+	yosys> write_verilog -noattr bad_mux_net.v
+	yosys> show
+
+Below is the representation of design
+
+![synthmux](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/e773a738-f511-42d4-be5e-b125fd604448)
+
+
+Below is the netlist
+
+![netlist](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/e75eb526-e682-450f-b0f1-ae7d9cd959fd)
+
+
+Below is the commands GLS of mux
+
+```
+iverilog <path to verilog model: ../mylib/verilog_model/primitives.v> <path to sky130_fd_sc_hd__tt_025C_1v80.lib: ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib> <name netlist: bad_mux_net.v> <name testbench: tb_bad_mux.v>
+./a.out
+gtkwave tb_bad_mux.vdc
+```
+
+Below is the representation of obtained simulation and as you can see it's not matching up with the simulation we did before which was pre-synthesis simulation
+
+</details>
+
+<details><summary>
+	Simulation and synthesis: blocking_caveat.v
+</summary>
+	
+Below is the commands to simulate blocking_caveat
+
+ ```
+iverilog blocking_caveat.v tb_blocking_caveat.v
+./a.out
+gtkwave tb_blocking_caveat.vcd
+```
+Displayed below is a visual representation , showcasing the outcome of the simulation we've conducted. Notably, upon careful observation, it becomes evident that the variable "d" is retaining or holding on to its previous values. Strikingly, this behavior is akin to what one might expect from a flip-flop in a circuit, even though the circuit configuration in question does not involve an actual flip-flop component. This incongruence with the intended design and function of the circuit constitutes an incorrect behavior, indicating a deviation from the anticipated simulation results.
+
+![simulationpre](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/f86aeae0-12cb-422d-a78d-d212d1255895)
+
+
+Below is the synthesis of the design
+
+![synth](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/4747ca8d-4a53-4f3a-aed5-6d9cc5dcc2f2)
+
+
+Below is the netlist showing
+
+![netlist](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/295d8434-77fb-483b-9f0c-a60fbbd4b768)
+
+
+Below is the commands GLS of blocking_caveat 
+
+```
+iverilog <path to verilog model: ../mylib/verilog_model/primitives.v> <path to verilog model: ../mylib/verilog_model/sky130_fd_sc_hd.v> <name netlist: blocking_caveat_net.v> <name testbench: tb_blocking_caveat.v>
+./a.out
+gtkwave tb_blocking_caveat.vdc
+```
+
+Below representation shows an evident dissimilarity arises when comparing this simulation result with the simulation executed prior to the synthesis stage. The primary reason for this disparity can be attributed to the presence of a blocking statement within the design. 
+
+
 
 </details>
 
