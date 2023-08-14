@@ -1,5 +1,5 @@
 # IIITB_ASIC
-## Day 0
+## Day 0 
 
 <details>
  <summary> Summary </summary>
@@ -302,35 +302,66 @@ gtkwave tb_dff_const1.vdc
 <details><summary>dff_const1</summary>
 Below is the representation of the obtained simulation
 
+![wavedff1](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/ac0e1d94-3715-4570-b9f7-695dff470d61)
+
+
 Below is the representation of syntesized design of optimized dff_const1.v
+
+![Synthdff1](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/543a5741-03e4-48cf-bff1-5abb50d1b960)
+
 
 </details>
 
 <details><summary>dff_const2</summary>
 Below is the representation of the obtained simulation
 
+![wavedff2](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/b481f748-070c-4073-b2ad-155017c65a87)
+
+
 Below is the representation of syntesized design of optimized dff_const2.v
+
+![synth2](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/a00e4f40-706a-4d4e-8bae-8295b8a98869)
+
 
 </details>
 
 <details><summary>dff_const3</summary>
 Below is the representation of the obtained simulation
 
+![wavedff3](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/d0b8116e-ae01-4165-af26-1674dbbb4759)
+
+
 Below is the representation of syntesized design of optimized dff_const3.v
+
+![synth3](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/d28c3615-7f9e-4699-a35a-1a7816cc78ec)
+
 
 </details>
 
 <details><summary>dff_const4</summary>
 Below is the representation of the obtained simulation
 
+![wavedff4](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/201203b6-fe4b-43be-85b0-06b792bc6146)
+
+
 Below is the representation of syntesized design of optimized dff_const4.v
+
+![synth4](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/a0a6032a-f9a6-4751-ba23-b0884f11facb)
+
 
 </details>
 
 <details><summary>dff_const5</summary>
+	
 Below is the representation of the obtained simulation
 
+![wavedff5](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/52d88382-92ab-4d49-98be-2184812e82ad)
+
+
 Below is the representation of syntesized design of optimized dff_const5.v
+
+![synth5](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/3d9e9a9d-b319-4825-8fda-af72474670a2)
+
 
 </details>
 
@@ -339,11 +370,17 @@ Below is the representation of syntesized design of optimized dff_const5.v
 
 Below is the representation of optimized design
 
+![synthcounter](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/07e26d54-fd47-455e-ba89-6800bdb4cbab)
+
+
 </details>
 
 <details><summary>counter_opt2</summary>
 
 Below is the representation of syntesized design
+
+![synthcounter2](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/d7ba7d27-83c6-4d7d-89bf-9dbb908e00bb)
+
 
 </details>
 
