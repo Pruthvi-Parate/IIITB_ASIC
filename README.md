@@ -527,8 +527,7 @@ Below representation shows an evident dissimilarity arises when comparing this s
 
 ## Day 5
 
-<details> <summarry> Overview
-</summarry>
+<details><summary>Overview</summary>
 	
 In the realm of ASIC VLSI system design, efficient decision-making and control flow mechanisms are paramount to achieving optimal performance and functionality. This is where conditional constructs such as "if" and "case" statements play a pivotal role. These statements serve as powerful tools for directing the behavior of digital circuits, allowing designers to create dynamic responses based on specific conditions or input values. In this context, the intricate interplay between these conditional statements and the underlying hardware architecture forms the cornerstone of crafting sophisticated and responsive ASIC designs
 
@@ -572,6 +571,21 @@ Displayed here is a representation of the design achieved, and within it, a clea
 
 
 
+</details>
+
+<details><summary>Simulation, synthesis, and GLS of bad_case</summary>
+
+ Below is the representation of bad_case. When the "select" input is set to the binary value "11," a puzzling situation arises within the simulation. In this circumstance, the simulator appears to grapple with determining the appropriate course of action, resulting in the y output steadfastly assuming a constant value of "1."
+
+
+ Below are the commands for GLS
+ ```
+iverilog  ../mylib/verilog_model/primitives.v ../mylib/verilog_model/sky130_fd_sc_hd.v bad_case_net.v tb_bad_case.v
+./a.out
+gtkwave tb_bad_case.vdc
+```
+
+Below is the simulation in which we can see the mismatch
 </details>
 
 
