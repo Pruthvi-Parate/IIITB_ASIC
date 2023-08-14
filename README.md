@@ -385,6 +385,46 @@ Below is the representation of syntesized design
 </details>
 
 </details>
+
+## Day 4
+
+<details> <summary>
+	Overview
+</summary>
+Gate-level simulation is a crucial aspect of digital hardware design and verification, especially in fields like VLSI, FPGA, and ASIC design. It involves simulating the behavior of a digital circuit at the gate level, which is the lowest level of abstraction in the design hierarchy. Gate-level simulation helps verify the correctness of a circuit's logic and functionality before fabrication or implementation on hardware.  
+
+Blocking assignments are executed sequentially in the order they appear in the code. When a blocking assignment is encountered, the right-hand side (RHS) expression is evaluated immediately, and the signal on the left-hand side (LHS) is updated with the new value.
+Non-blocking assignments, on the other hand, are not executed immediately. Instead, all non-blocking assignments within a procedural block are evaluated simultaneously at the end of the block's execution.
+
+</details>
+
+<details><summary> 
+	Simulation and synthesis:ternary_operator_mux
+</summary>
+
+Below are the commands
+
+```
+iverilog <name verilog: ternary_operator_mux.v tb_ternary_operator_mux.v
+./a.out
+gtkwave tb_ternary_operator_mux.vdc
+```
+Below is the obtained simulation which acts as mux
+
+
+Below is the command and representation to synthesis the design into netlist of mux.
+
+	yosys> read_liberty -lib <path to sky130_fd_sc_hd__tt_025C_1v80.lib>
+	yosys> read_verilog <name of verilog file: ternary_operator_mux.v>
+	yosys> synth -top <name: ternary_operator_mux>
+	yosys> abc -liberty <path to sky130_fd_sc_hd__tt_025C_1v80.lib>
+	yosys> write_verilog -noattr <name of netlist: ternary_operator_mux_net.v>
+	yosys> show
+
+Below is the obtained net file
+
+</details>
+
 [Reference Section]:#
 ## References
 1. https://yosyshq.net/yosys/
