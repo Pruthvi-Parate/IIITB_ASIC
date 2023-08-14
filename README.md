@@ -414,11 +414,11 @@ Below is the obtained simulation which acts as mux
 
 Below is the command and representation to synthesis the design into netlist of mux.
 
-	yosys> read_liberty -lib <path to sky130_fd_sc_hd__tt_025C_1v80.lib>
-	yosys> read_verilog <name of verilog file: ternary_operator_mux.v>
-	yosys> synth -top <name: ternary_operator_mux>
-	yosys> abc -liberty <path to sky130_fd_sc_hd__tt_025C_1v80.lib>
-	yosys> write_verilog -noattr <name of netlist: ternary_operator_mux_net.v>
+	yosys> read_liberty -lib ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+	yosys> read_verilog ternary_operator_mux.v
+	yosys> synth -top ternary_operator_mux
+	yosys> abc -liberty ../lib/sky130_fd_sc_hd__tt_025C_1v80.lib
+	yosys> write_verilog -noattr ternary_operator_mux_net.v
 	yosys> show
 
 Below is the obtained net file
