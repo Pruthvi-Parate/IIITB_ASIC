@@ -529,7 +529,7 @@ Below representation shows an evident dissimilarity arises when comparing this s
 
 <details><summary>Overview</summary>
 	
-In the realm of ASIC VLSI system design, efficient decision-making and control flow mechanisms are paramount to achieving optimal performance and functionality. This is where conditional constructs such as "if" and "case" statements play a pivotal role. These statements serve as powerful tools for directing the behavior of digital circuits, allowing designers to create dynamic responses based on specific conditions or input values. In this context, the intricate interplay between these conditional statements and the underlying hardware architecture forms the cornerstone of crafting sophisticated and responsive ASIC designs
+In the realm of ASIC VLSI system design, efficient decision-making and control flow mechanisms are paramount to achieving optimal performance and functionality. This is where conditional constructs such as "if" and "case" statements play a pivotal role. These statements serve as powerful tools for directing the behavior of digital circuits, allowing designers to create dynamic responses based on specific conditions or input values. In this context, the intricate interplay between these conditional statements and the underlying hardware architecture forms the cornerstone of crafting sophisticated and responsive ASIC designs.
 
 </details>
 
