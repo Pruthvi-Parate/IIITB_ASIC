@@ -633,7 +633,25 @@ Below is shown the simulation which is perfectly matches with the previous one
 
 </details>
 
-<details><summary>RCA</summary></details>
+<details><summary>RCA</summary>
+	
+Below is the representation of rca and by observing it is 8bit rca
+
+
+Below is the synthesized version of 8bit rca
+
+To obtain GLS below are the commands
+
+```
+iverilog  ../mylib/verilog_model/primitives.v ../mylib/verilog_model/sky130_fd_sc_hd.v rca_net.v tb_rca.v
+./a.out
+gtkwave tb_rca.vcd
+```
+
+Below is the simulation which perfectly matches with the previous one
+</details>
+
+
 [Reference Section]:#
 ## References
 1. https://yosyshq.net/yosys/
