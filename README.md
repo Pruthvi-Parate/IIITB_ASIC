@@ -537,6 +537,11 @@ In the realm of ASIC VLSI system design, efficient decision-making and control f
 
 Presented below is a representation of simulation and synthesis showcasing the outcome of the simulation process. Upon analysis, it becomes evident that an inferred latch has materialized within the design. This inference is drawn from the observation that the output consistently retains a constant value during instances when the "select" signal fails to achieve a high state.
 
+![sim](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/cc6d44b1-09b7-4580-a6cd-1ad9be1fd976)
+
+![synthif](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/dddffa3c-8df3-40fc-89ec-5de71965cc4f)
+
+
 </details>
 
 <details><summary>
@@ -545,11 +550,14 @@ Presented below is a representation of simulation and synthesis showcasing the o
 	
 Below is shown simulation and synthesized representation of incomp_if2
 
+![sim2](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/e1f4b047-e004-4bb8-9a67-0216f79cc444)
+
+![synth2](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/7365230c-93e3-46d0-ac65-5a33cc0ee0ed)
 
  
 </details>
 
-<details><summary> Simulation and synthesis of incomp_case</summary>
+<details><summary> Simulation and synthesis of incomp_case and comp_case</summary>
 In essence, a "case" statement involves evaluating a given expression against a set of predefined conditions, known as case values. Once a match is found between the expression and a case value, the associated block of logic is executed. This allows for the implementation of various pathways based on different input scenarios.
 following are the commands
 
@@ -561,6 +569,15 @@ gtkwave tb_comp_case.vcd
 
 Below is shown representation of simulation and synthesis. This behavior specifically manifests when the "select" signal is assigned a value of either 2 or 3, with particular emphasis on the condition where the second bit of the "select" signal, denoted as sel[1], asserts a logic level of 1.
 
+![compsim](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/589c1cdd-07a2-416b-842e-c2c7f943a699)
+
+![compsynth](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/1ded7ad9-ab9b-47e4-8522-291142549ee0)
+
+ Below is the representation of incomp_case
+
+![sim](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/1b7f94b4-2ab4-4fc6-8f1d-0753cd2aa156)
+
+![synth](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/8efbce99-bd54-4d68-9cd7-0f033bd41ca0)
 
  
 </details>
@@ -569,6 +586,8 @@ Below is shown representation of simulation and synthesis. This behavior specifi
 
 Displayed here is a representation of the design achieved, and within it, a clear outcome aligns with our expectations. As anticipated, a single latch materializes, governing the behavior of the x output. Moreover, the boolean expressions we foresaw for both x and y are convincingly deduced by the design itself. This means that the logic we intended for x and y, the way they should operate based on specific conditions, is accurately recognized and implemented by the design.
 
+![partialcase](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/d29999cb-1dc5-4273-b6ec-20072a4f91ea)
+
 
 
 </details>
@@ -576,6 +595,10 @@ Displayed here is a representation of the design achieved, and within it, a clea
 <details><summary>Simulation, synthesis, and GLS of bad_case</summary>
 
  Below is the representation of bad_case. When the "select" input is set to the binary value "11," a puzzling situation arises within the simulation. In this circumstance, the simulator appears to grapple with determining the appropriate course of action, resulting in the y output steadfastly assuming a constant value of "1."
+
+![sim](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/4a229020-f5eb-49f1-8273-cee1164978d1)
+
+![synth](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/801fba72-cef6-4d7c-9ee3-7fcfabd30d85)
 
 
  Below are the commands for GLS
@@ -586,11 +609,19 @@ gtkwave tb_bad_case.vcd
 ```
 
 Below is the simulation in which we can see the mismatch
+
+![Gls-sim](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/e6059b11-1a61-4173-82c3-45f810dc8cdf)
+
+
 </details>
 
 <details><summary>Simulation, synthesis, and GLS of  mux_generate</summary>
 
 Below is the representation simulation of mux_generate which is 4*1 mux
+
+![sim](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/3f2d744d-bc84-4420-98ef-b0abff8315e4)
+
+![synth](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/7bc6d12b-4617-48e4-929a-a01034ccced0)
 
 
 To obtain GLS below are the commands 
@@ -603,12 +634,16 @@ gtkwave tb_mux_generate.vcd
 
 Below is the resulted simulation which completely matches with previous one
 
+![glssim](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/f7e39bd0-ba8b-4f2e-b8b5-46618b5af8ff)
+
+
 </details>
 
 <details><summary>demux_case</summary>
 
 Below is the representation of demux_case and by observing it is 1*8 demux
 
+![sim](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/0d40008b-caae-4805-8be1-9a4df7d3476e)
 
 
 </details>
@@ -617,8 +652,13 @@ Below is the representation of demux_case and by observing it is 1*8 demux
 
 Below is the representation of demux_generate and by observing it is 1*8 demux
 
+![sim](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/96172813-2099-4a3e-99e4-84803e637bd2)
+
 
 Below is the synthesized design representation
+
+![genrateSynth](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/3d501c44-5b7a-484a-8870-a29321d75bff)
+
 
 For GLS below are the commands
 
@@ -630,6 +670,9 @@ gtkwave tb_demux_generate.vcd
 
 Below is shown the simulation which is perfectly matches with the previous one
 
+![Gls](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/dcba932f-419f-49eb-85f5-d352332ac316)
+
+
 
 </details>
 
@@ -637,8 +680,13 @@ Below is shown the simulation which is perfectly matches with the previous one
 	
 Below is the representation of rca and by observing it is 8bit rca
 
+![sim](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/518c7364-880c-4bc2-9491-058af91e0d6b)
+
 
 Below is the synthesized version of 8bit rca
+
+![synth](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/ce31432d-60be-4d51-89e4-0cfa83f8c2dd)
+
 
 To obtain GLS below are the commands
 
@@ -649,6 +697,10 @@ gtkwave tb_rca.vcd
 ```
 
 Below is the simulation which perfectly matches with the previous one
+
+![gls](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/70a76c8d-f8b5-4813-9197-90129fa5fb48)
+
+
 </details>
 
 
