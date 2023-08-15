@@ -529,7 +529,13 @@ Below representation shows an evident dissimilarity arises when comparing this s
 
 <details><summary>Overview</summary>
 	
-In the realm of ASIC VLSI system design, efficient decision-making and control flow mechanisms are paramount to achieving optimal performance and functionality. This is where conditional constructs such as "if" and "case" statements play a pivotal role. These statements serve as powerful tools for directing the behavior of digital circuits, allowing designers to create dynamic responses based on specific conditions or input values. In this context, the intricate interplay between these conditional statements and the underlying hardware architecture forms the cornerstone of crafting sophisticated and responsive ASIC designs.
+In the realm of ASIC VLSI system design, efficient decision-making and control flow mechanisms are paramount to achieving optimal performance and functionality. This is where conditional constructs such as "if" and "case" statements play a pivotal role. These statements serve as powerful tools for directing the behavior of digital circuits, allowing designers to create dynamic responses based on specific conditions or input values. In this context, the intricate interplay between these conditional statements and the underlying hardware architecture forms the cornerstone of crafting sophisticated and responsive ASIC designs.Below shown hardware representation
+
+![WhatsApp Image 2023-08-15 at 2 28 19 PM](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/fce217f0-6689-4b57-bd08-68d28b348078)
+
+![WhatsApp Image 2023-08-15 at 2 28 19 PM (1)](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/7b01a184-a5fc-41e3-a3ef-b5ea0378063e)
+
+
 
 </details>
 
@@ -559,6 +565,10 @@ Below is shown simulation and synthesized representation of incomp_if2
 
 <details><summary> Simulation and synthesis of incomp_case and comp_case</summary>
 In essence, a "case" statement involves evaluating a given expression against a set of predefined conditions, known as case values. Once a match is found between the expression and a case value, the associated block of logic is executed. This allows for the implementation of various pathways based on different input scenarios.
+
+![WhatsApp Image 2023-08-15 at 2 38 38 PM](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/629fbd4f-8d3e-4639-8384-a31e2c2996be)
+
+ 
 following are the commands
 
 ```
