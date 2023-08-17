@@ -715,8 +715,13 @@ Below is the simulation which perfectly matches with the previous one
 ## Day 6
 
 <details>
-<summary>
-</summary>
+<summary>Overview  
+</summary>RISC-V is an open-source instruction set architecture (ISA) used for the development of custom processors targeting a variety of end applications. The flow
+of this architecture from application software or apps to the hardware and there is
+system software block which consists of os, compiler and assembler and the flow is as follows: Os which handle IO operations, allocate memory and low level synthesis functions.
+Compiler converts c,c++, java to instructions and then assembler converts this instructions
+into the binary data which hardware can understand.
+
 </details>
 
 
