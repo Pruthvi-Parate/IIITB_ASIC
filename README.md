@@ -720,7 +720,9 @@ Below is the simulation which perfectly matches with the previous one
 of this architecture from application software or apps to the hardware and there is
 system software block which consists of os, compiler and assembler and the flow is as follows: Os which handle IO operations, allocate memory and low level synthesis functions.
 Compiler converts c,c++, java to instructions and then assembler converts this instructions
-into the binary data which hardware can understand.
+into the binary data which hardware can understand. Below shown the diagram
+
+![diagram](image.png)
 
 </details>
 
