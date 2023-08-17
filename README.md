@@ -710,12 +710,14 @@ Below is the simulation which perfectly matches with the previous one
 
 ![gls](https://github.com/Pruthvi-Parate/IIITB_ASIC/assets/72121158/70a76c8d-f8b5-4813-9197-90129fa5fb48)
 
+
 ## Day 6
 
-</details>
+<details>
 <summary>
 </summary>
-<details>
+</details>
+
 
 [Reference Section]:#
 ## References
