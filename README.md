@@ -1,4 +1,5 @@
 # IIITB_ASIC
+## Week 1
 ## Day 0 
 
 <details>
@@ -712,7 +713,9 @@ Below is the simulation which perfectly matches with the previous one
 
 </details>
 
-## Day 6
+## Week 2 - RISC-V
+
+## Day 1
 
 <details>
 <summary>Overview  
@@ -739,6 +742,9 @@ The number of bits determines the range of values that can be represented. For a
 ![Alt text](image-2.png)
 
 </details>
+
+
+
 
 [Reference Section]:#
 ## References
